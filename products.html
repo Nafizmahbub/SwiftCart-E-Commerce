@@ -48,6 +48,19 @@
     <div id="productGrid" class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
   </main>
 
+  <!-- PRODUCT DETAILS MODAL -->
+<div id="modalBackdrop" class="hidden fixed inset-0 bg-black/50 z-50 p-4">
+  <div class="max-w-3xl w-full mx-auto mt-10 bg-white rounded-2xl shadow-lg overflow-hidden relative">
+    
+    <button id="modalClose"
+      class="absolute top-3 right-3 w-10 h-10 rounded-full grid place-items-center hover:bg-slate-100 text-2xl">
+      ×
+    </button>
+
+    <div id="modalContent" class="p-6"></div>
+  </div>
+</div>
+
   <!-- FOOTER -->
   <footer class="bg-slate-900 text-gray-300 pt-12 pb-6">
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8">

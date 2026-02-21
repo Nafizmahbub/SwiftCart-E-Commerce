@@ -7,47 +7,47 @@
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./style.css">
+   <link rel="stylesheet" href="./style.css">
 
 </head>
 
 <body class="bg-slate-50 text-slate-900">
 
   <!-- NAVBAR -->
-  <header class="sticky top-0 z-50 bg-white border-b">
-    <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="#" class="text-xl font-bold text-indigo-600">SwiftCart</a>
+<header class="sticky top-0 z-50 bg-white border-b">
+  <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="./index.html" class="text-xl font-bold text-indigo-600">SwiftCart</a>
 
-      <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-700">
-        <li><a class="hover:text-indigo-600" href="#">Home</a></li>
-        <a class="hover:text-indigo-600" href="./products.html">Products</a>
-        <li><a class="hover:text-indigo-600" href="#about">About</a></li>
-        <li><a class="hover:text-indigo-600" href="#contact">Contact</a></li>
-      </ul>
+    <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-700">
+      <li><a class="hover:text-indigo-600" href="./index.html">Home</a></li>
+      <li><a class="hover:text-indigo-600" href="./products.html">Products</a></li>
+      <li><a class="hover:text-indigo-600" href="#about">About</a></li>
+      <li><a class="hover:text-indigo-600" href="#contact">Contact</a></li>
+    </ul>
 
-      <div class="flex items-center gap-3">
-        <button id="cartBtn" class="relative p-2 rounded-md hover:bg-slate-100 border">
-          🛒
-          <span id="cartCount" class="absolute -top-2 -right-2 bg-indigo-600 text-white text-xs w-5 h-5 rounded-full grid place-items-center">0</span>
-        </button>
+    <div class="flex items-center gap-3">
+      <button id="cartBtn" class="relative p-2 rounded-md hover:bg-slate-100 border">
+        🛒
+        <span id="cartCount"
+          class="absolute -top-2 -right-2 bg-indigo-600 text-white text-xs w-5 h-5 rounded-full grid place-items-center">0</span>
+      </button>
 
-        <button id="mobileMenuBtn" class="md:hidden p-2 rounded-md hover:bg-slate-100 border">
-          ☰
-        </button>
-      </div>
-    </nav>
-
-    <!-- Mobile menu -->
-    <div id="mobileMenu" class="hidden md:hidden border-t bg-white">
-      <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-2 text-sm">
-        <a class="py-2 hover:text-indigo-600" href="#">Home</a>
-        <a class="py-2 hover:text-indigo-600" href="#products">Products</a>
-        <a class="py-2 hover:text-indigo-600" href="#about">About</a>
-        <a class="py-2 hover:text-indigo-600" href="#contact">Contact</a>
-      </div>
+      <button id="mobileMenuBtn" class="md:hidden p-2 rounded-md hover:bg-slate-100 border">
+        ☰
+      </button>
     </div>
-  </header>
+  </nav>
 
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="hidden md:hidden border-t bg-white">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-2 text-sm font-medium text-slate-700">
+      <a class="py-2 hover:text-indigo-600" href="./index.html">Home</a>
+      <a class="py-2 hover:text-indigo-600" href="./products.html">Products</a>
+      <a class="py-2 hover:text-indigo-600" href="#about">About</a>
+      <a class="py-2 hover:text-indigo-600" href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
   <!-- HERO -->
   <section
   class="relative h-[420px] md:h-[520px] bg-cover bg-[center_top] flex items-center"

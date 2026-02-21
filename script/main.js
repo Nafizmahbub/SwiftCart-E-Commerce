@@ -14,6 +14,21 @@ if (modalBackdrop) {
   });
 }
 
+/* ---------- Mobile menu toggle ---------- */
+const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+if (mobileMenuBtn && mobileMenu) {
+  mobileMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+
+  
+  mobileMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => mobileMenu.classList.add("hidden"));
+  });
+}
+
 /* ---------- Cart drawer events ---------- */
 const cartBtn = document.getElementById("cartBtn");
 const cartCloseBtn = document.getElementById("cartClose");
